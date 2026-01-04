@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4DFC324F-4229-4BF8-83A7-1E5CF0588904}|SMTChampionshipAPI\\SMTChampionshipAPI.csproj|c:\\users\\smt\\desktop\\smt_projects\\repos\\smt_championschip_api\\smtchampionshipapi\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFC324F-4229-4BF8-83A7-1E5CF0588904}|SMTChampionshipAPI\\SMTChampionshipAPI.csproj|solutionrelative:smtchampionshipapi\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFC324F-4229-4BF8-83A7-1E5CF0588904}|SMTChampionshipAPI\\SMTChampionshipAPI.csproj|c:\\users\\smt\\desktop\\smt_projects\\repos\\smt_championschip_api\\smtchampionshipapi\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFC324F-4229-4BF8-83A7-1E5CF0588904}|SMTChampionshipAPI\\SMTChampionshipAPI.csproj|solutionrelative:smtchampionshipapi\\controllers\\groupscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFC324F-4229-4BF8-83A7-1E5CF0588904}|SMTChampionshipAPI\\SMTChampionshipAPI.csproj|c:\\users\\smt\\desktop\\smt_projects\\repos\\smt_championschip_api\\smtchampionshipapi\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFC324F-4229-4BF8-83A7-1E5CF0588904}|SMTChampionshipAPI\\SMTChampionshipAPI.csproj|solutionrelative:smtchampionshipapi\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4DFC324F-4229-4BF8-83A7-1E5CF0588904}|SMTChampionshipAPI\\SMTChampionshipAPI.csproj|c:\\users\\smt\\desktop\\smt_projects\\repos\\smt_championschip_api\\smtchampionshipapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DFC324F-4229-4BF8-83A7-1E5CF0588904}|SMTChampionshipAPI\\SMTChampionshipAPI.csproj|solutionrelative:smtchampionshipapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,14 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MatchController.cs",
+              "DocumentMoniker": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\Controllers\\MatchController.cs",
+              "RelativeDocumentMoniker": "SMTChampionshipAPI\\Controllers\\MatchController.cs",
+              "ToolTip": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\Controllers\\MatchController.cs",
+              "RelativeToolTip": "SMTChampionshipAPI\\Controllers\\MatchController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T13:54:33.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GroupsController.cs",
+              "DocumentMoniker": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\Controllers\\GroupsController.cs",
+              "RelativeDocumentMoniker": "SMTChampionshipAPI\\Controllers\\GroupsController.cs",
+              "ToolTip": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\Controllers\\GroupsController.cs",
+              "RelativeToolTip": "SMTChampionshipAPI\\Controllers\\GroupsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T13:53:02.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TeamController.cs",
+              "DocumentMoniker": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\Controllers\\TeamController.cs",
+              "RelativeDocumentMoniker": "SMTChampionshipAPI\\Controllers\\TeamController.cs",
+              "ToolTip": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\Controllers\\TeamController.cs",
+              "RelativeToolTip": "SMTChampionshipAPI\\Controllers\\TeamController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T13:52:07.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\Program.cs",
               "RelativeDocumentMoniker": "SMTChampionshipAPI\\Program.cs",
               "ToolTip": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\Program.cs",
               "RelativeToolTip": "SMTChampionshipAPI\\Program.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAwwIMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAqwJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T13:34:31.598Z",
+              "WhenOpened": "2026-01-04T13:48:16.357Z",
               "EditorCaption": ""
             }
           ]

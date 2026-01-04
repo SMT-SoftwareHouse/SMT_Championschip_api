@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SMTChampionshipAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c7277f209a4441a62849de91a839591f33c3e4b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6df705cf3915366a73af8940a837683f34c92164")]
 [assembly: System.Reflection.AssemblyProductAttribute("SMTChampionshipAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SMTChampionshipAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

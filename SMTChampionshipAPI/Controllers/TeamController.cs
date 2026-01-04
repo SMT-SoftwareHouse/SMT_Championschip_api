@@ -28,19 +28,7 @@ namespace SMTChampionshipAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var teams = await _context.Teams.AsNoTracking().ToListAsync();
-
-            var result = teams.Select(t => new
-            {
-                t.Id,
-                t.EnName,
-                t.ArName,
-                t.EnDescription,
-                t.ArDescription,
-                LogoUrl = t.LogoPath
-            });
-
-            return Ok(result);
+            return Ok(_context.Teams.ToList());
         }
 
         // =========================
@@ -53,15 +41,7 @@ namespace SMTChampionshipAPI.Controllers
             if (team == null)
                 return NotFound();
 
-            return Ok(new
-            {
-                team.Id,
-                team.EnName,
-                team.ArName,
-                team.EnDescription,
-                team.ArDescription,
-                LogoUrl = team.LogoPath
-            });
+            return Ok(team);
         }
 
         // =========================

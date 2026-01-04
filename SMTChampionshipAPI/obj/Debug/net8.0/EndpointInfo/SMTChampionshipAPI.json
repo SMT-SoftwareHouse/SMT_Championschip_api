@@ -306,17 +306,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Match"
+                "$ref": "#/components/schemas/MatchCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Match"
+                "$ref": "#/components/schemas/MatchCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Match"
+                "$ref": "#/components/schemas/MatchCreateDTO"
               }
             }
           }
@@ -804,58 +804,6 @@
         },
         "additionalProperties": false
       },
-      "Match": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "team1Id": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "team1": {
-            "$ref": "#/components/schemas/Team"
-          },
-          "team2Id": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "team2": {
-            "$ref": "#/components/schemas/Team"
-          },
-          "team1Goals": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "team2Goals": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "matchDateTime": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "active": {
-            "type": "boolean",
-            "nullable": true
-          },
-          "matchState": {
-            "$ref": "#/components/schemas/MatchStatus"
-          }
-        },
-        "additionalProperties": false
-      },
       "MatchCreateDTO": {
         "type": "object",
         "properties": {
@@ -911,41 +859,6 @@
         "properties": {
           "status": {
             "$ref": "#/components/schemas/MatchStatus"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Team": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "logoPath": {
-            "type": "string",
-            "nullable": true
-          },
-          "enName": {
-            "type": "string",
-            "nullable": true
-          },
-          "arName": {
-            "type": "string",
-            "nullable": true
-          },
-          "enDescription": {
-            "type": "string",
-            "nullable": true
-          },
-          "arDescription": {
-            "type": "string",
-            "nullable": true
-          },
-          "groupId": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
           }
         },
         "additionalProperties": false

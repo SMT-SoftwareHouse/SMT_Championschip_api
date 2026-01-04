@@ -136,24 +136,19 @@ namespace SMTChampionshipAPI.Controllers
         // =========================
         [HttpPut("{id}")]
 
-        public async Task<IActionResult> Update(int id, [FromBody] Match match)
+        public async Task<IActionResult> Update(int id, [FromBody] MatchCreateDTO newMatch)
         {
-            if (id != match.Id)
-                return BadRequest("Id mismatch");
-
-            if (match.Team1Id == match.Team2Id)
-                return BadRequest("Team1 and Team2 cannot be the same");
 
             var existing = await _context.Matches.FindAsync(id);
             if (existing == null)
                 return NotFound();
 
-            existing.Team1Id = match.Team1Id;
-            existing.Team2Id = match.Team2Id;
-            existing.Team1Goals = match.Team1Goals;
-            existing.Team2Goals = match.Team2Goals;
-            existing.MatchDateTime = match.MatchDateTime;
-            existing.Active = match.Active;
+            existing.Team1Id = newMatch.Team1Id;
+            existing.Team2Id = newMatch.Team2Id;
+            existing.Team1 = _context.Teams.Where(w => w.Id == newMatch.Team1Id).FirstOrDefault();
+            existing.Team2 = _context.Teams.Where(w => w.Id == newMatch.Team2Id).FirstOrDefault();
+            existing.MatchDateTime = newMatch.MatchDateTime;
+            existing.Active = true;
 
             await _context.SaveChangesAsync();
             return Ok(existing);
