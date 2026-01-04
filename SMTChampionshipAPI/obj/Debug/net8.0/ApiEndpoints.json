@@ -1,0 +1,495 @@
+[
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SMTChampionshipAPI.Controllers.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.GroupsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Groups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.GroupsController",
+    "Method": "Create",
+    "RelativePath": "api/Groups",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.GroupsController",
+    "Method": "AddTeamToGroup",
+    "RelativePath": "api/Groups/{groupId}/teams/{teamId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "teamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.GroupsController",
+    "Method": "RemoveTeamFromGroup",
+    "RelativePath": "api/Groups/{groupId}/teams/{teamId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "teamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.GroupsController",
+    "Method": "GetById",
+    "RelativePath": "api/Groups/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.GroupsController",
+    "Method": "Update",
+    "RelativePath": "api/Groups/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.GroupsController",
+    "Method": "Delete",
+    "RelativePath": "api/Groups/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Matches",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "Create",
+    "RelativePath": "api/Matches",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newMatch",
+        "Type": "SMTChampionshipAPI.DTOS.MatchCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "GetById",
+    "RelativePath": "api/Matches/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "Update",
+    "RelativePath": "api/Matches/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "match",
+        "Type": "SMTChampionshipAPI.Models.Match",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "Delete",
+    "RelativePath": "api/Matches/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "AssignTeamToMatch",
+    "RelativePath": "api/Matches/{id}/assign-team",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SMTChampionshipAPI.DTOS.AssignTeamToMatchDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "SetMatchGoals",
+    "RelativePath": "api/Matches/{id}/set-goals",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SMTChampionshipAPI.DTOS.SetMatchGoalsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "SetMatchStatus",
+    "RelativePath": "api/Matches/{id}/set-status",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SMTChampionshipAPI.DTOS.SetMatchStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "UpdateMatchTime",
+    "RelativePath": "api/Matches/{id}/time",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SMTChampionshipAPI.DTOS.UpdateMatchTimeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "GetByGroupId",
+    "RelativePath": "api/Matches/by-group/{groupId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.MatchesController",
+    "Method": "GetByTeamId",
+    "RelativePath": "api/Matches/by-team/{teamId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.ResultsController",
+    "Method": "GetAllResults",
+    "RelativePath": "api/Results",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.ResultsController",
+    "Method": "GetByGroup",
+    "RelativePath": "api/Results/by-group/{groupId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.ResultsController",
+    "Method": "GetByTeam",
+    "RelativePath": "api/Results/by-team/{teamId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teamId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.TeamController",
+    "Method": "GetAll",
+    "RelativePath": "api/Team",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.TeamController",
+    "Method": "Create",
+    "RelativePath": "api/Team",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EnName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EnDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Logo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.TeamController",
+    "Method": "GetById",
+    "RelativePath": "api/Team/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.TeamController",
+    "Method": "Update",
+    "RelativePath": "api/Team/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "EnName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EnDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Logo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SMTChampionshipAPI.Controllers.TeamController",
+    "Method": "Delete",
+    "RelativePath": "api/Team/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

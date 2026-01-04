@@ -1,0 +1,6 @@
+@SMTChampionshipAPI_HostAddress = http://localhost:5246
+
+GET {{SMTChampionshipAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
