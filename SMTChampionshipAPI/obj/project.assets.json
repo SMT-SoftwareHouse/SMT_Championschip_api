@@ -3061,11 +3061,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMTFE\\SMTChampionshipAPI\\SMTChampionshipAPI\\SMTChampionshipAPI.csproj",
+      "projectUniqueName": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\SMTChampionshipAPI.csproj",
       "projectName": "SMTChampionshipAPI",
-      "projectPath": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMTFE\\SMTChampionshipAPI\\SMTChampionshipAPI\\SMTChampionshipAPI.csproj",
+      "projectPath": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\SMTChampionshipAPI.csproj",
       "packagesPath": "C:\\Users\\SMT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMTFE\\SMTChampionshipAPI\\SMTChampionshipAPI\\obj\\",
+      "outputPath": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

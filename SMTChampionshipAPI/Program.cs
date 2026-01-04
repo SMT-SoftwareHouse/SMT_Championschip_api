@@ -96,14 +96,35 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+const string CorsPolicy = "AllowSpecificOrigins";
+var allowedOrigins = builder.Configuration
+    .GetSection("Cors:Origins")
+    .Get<string[]>() ?? new[] 
+    {
+                "http://localhost:5173",
+                "http://localhost:3000",
+                "https://localhost:5173",
+                "https://localhost:3000"
+    };
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
+    options.AddPolicy(CorsPolicy, policy =>
     {
-        policy
-            .AllowAnyOrigin()
-            .AllowAnyHeader()
-            .AllowAnyMethod();
+        // MUST specify explicit origins when using credentials:
+        if (allowedOrigins != null && allowedOrigins.Length > 0)
+        {
+            policy.WithOrigins(allowedOrigins)
+                  .AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowCredentials();
+        }
+        else
+        {
+            // Fallback for development
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        }
     });
 });
 
@@ -120,8 +141,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors("AllowAll");
 
+app.UseCors(CorsPolicy);
 app.UseAuthentication();
 app.UseAuthorization();
 

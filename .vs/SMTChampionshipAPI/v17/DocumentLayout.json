@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMTFE\\SMTChampionshipAPI\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4DFC324F-4229-4BF8-83A7-1E5CF0588904}|SMTChampionshipAPI\\SMTChampionshipAPI.csproj|c:\\users\\smt\\desktop\\smt_projects\\repos\\smt_championschip_api\\smtchampionshipapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DFC324F-4229-4BF8-83A7-1E5CF0588904}|SMTChampionshipAPI\\SMTChampionshipAPI.csproj|solutionrelative:smtchampionshipapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +14,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\Program.cs",
+              "RelativeDocumentMoniker": "SMTChampionshipAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\SMT\\Desktop\\SMT_Projects\\Repos\\SMT_Championschip_api\\SMTChampionshipAPI\\Program.cs",
+              "RelativeToolTip": "SMTChampionshipAPI\\Program.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAwwIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T13:34:31.598Z",
+              "EditorCaption": ""
             }
           ]
         }
